@@ -22,6 +22,7 @@ length(rep(s, 10))
 rep(s, each = 3)
 
 # g)
+## Note that by = 1 is the default
 seq(7, 21, by = 1)
 7:21
 

@@ -29,12 +29,20 @@ temperatures <- data.frame(xmin = xmin, xmax = xmax)
 
 # h)
 xminFahrenheit <- 9/5 * xmin + 32
-temperatures <- within(temperatures, {xminFahrenheit <- 9/5 * xmin + 32})
+
+## Improve readability
+temperatures <- within(temperatures, {
+	xminFahrenheit <- 9/5 * xmin + 32
+})
 
 # i)
 xmaxFahrenheit <- 9/5 * xmax + 32
 temperaturesFahrenheit <- data.frame(xminFahrenheit = xminFahrenheit, xmaxFahrenheit = xmaxFahrenheit)
 
 # j)
+## Easier:
+temperaturesFahrenheit[1:5, ]
+temperaturesFahrenheit[-(6:7), ]
+
 iMonFri <- data.frame(xminFahrenheit = xminFahrenheit[1:5], xmaxFahrenheit = xmaxFahrenheit[1:5])
 iiMonFri <- data.frame(xminFahrenheit = xminFahrenheit[-(6:7)], xmaxFahrenheit = xmaxFahrenheit[-(6:7)])
