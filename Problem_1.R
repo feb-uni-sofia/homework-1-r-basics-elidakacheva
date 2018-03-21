@@ -1,4 +1,4 @@
-# Problem 1
+# Problem 1.
 
 # a)
 x <- c(4, 1, 1, 4)
