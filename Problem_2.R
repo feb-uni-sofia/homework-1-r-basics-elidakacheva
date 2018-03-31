@@ -1,4 +1,4 @@
-# Problem 2.
+# Problem 2
 
 # a)
 xmin <- c(23.0, 20.5, 28.2, 20.3, 22.4, 17.2, 18.2)
@@ -15,7 +15,7 @@ avgxmax <- mean(xmax)
 xmin[xmin < avgxmin]
 
 # e)
-xmin[xmin > avgxmin]
+xmin[xmax > avgxmax]
 
 # f)
 dates <- c('03Mon18', '04Tue18', '05Wed18', '06Thu18', '07Fri18', '08Sat18', '09Sun18')
